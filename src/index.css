@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.To-do-list-container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 1px 2px 3px 5px lightgray;
+  top: 50px;
+  width: 65%;
+  height: 80vh;
+  padding: 10px;
+  justify-content: center;
+}
+.To-do-list-container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.list {
+background-color: rgb(238, 235, 235);
+}
+ul {
+  list-style-type: none;
+  margin-top: 15px;
+  padding: 5px;
+  height: 380px;
+  overflow-y: scroll;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 7px;
+  background-color: white;
+}
+li::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+li button {
+  float: right;
+  height: 35px;
+}
+input[type="text"] {
+  width: 95%;
+  outline: none;
+  height: 40px;
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  position: relative;
+  margin-top: 10px;
+  width: 30px;
+  height: 20px;
+}
+button {
+  width: 60px;
+  height: 40px;
+  border: none;
+  color: white;
+}
+.Form-input {
+  position: relative;
+  width: 95%;
+  height: 100%;
+}
+input {
+  padding: 10px;
+}
+.Clear-list-button {
+  position: absolute;
+  background-color: red;
+  border-radius: 15px;
+  bottom: 0px;
+  width: 50%;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.select {
+  position: absolute;
+  outline: none;
+  height: 40px;
+  border-radius: 15px;
+  bottom: 0px;
+  width: 50%;
+  font-size: 18px;
+  letter-spacing: 2px;
+  right: 0px;
+  text-align: center;
+  border: none;
+  box-shadow:  1px 1px 3px 2px lightgray;
+}
+.stats {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+}
